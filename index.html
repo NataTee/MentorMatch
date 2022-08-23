@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="utf-8">
+        <meta name="keywords" content="Game PRO, conference">
+        <title>Find a mentor</title>
+
+        <link href="main.css" rel="stylesheet">
+        <link rel="icon" href="favicon.ico" type="image/ico">
+        <script src="data.js" async></script>
+        <script src="staff.js" async></script>
+    </head>
+
+    <body>
+
+        <header>
+            <a href="#"><img src="Photo/tutor.jpg" alt="Mentor" id="logoimg" /></a>
+
+            <nav class="horizontalNavigation">
+              <ul id="navList">
+                <li><a href="#reg">Find a mentor</a></li>
+                <li><a href="#">Book a session</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Login</a></li>
+              </ul>
+            </nav>
+        </header>
+
+        <section id="main">
+          <h2>How it works</h2>
+          <hr>
+          <p><h3>Find an Expert</h3>
+            Browse our community of experts to find the right one for you.
+          </p>
+          <p><h3>Request a Meeting</h3>
+            Once you have chosen your preferred mentor, they will reach out to you
+            within 48 hours to schedule a session.
+          </p>
+          <p><h3>Enjoy Learning</h3>
+            The mentors are here to motivate, encourage, and teach. Enjoy your session!
+          </p>
+        </section>
+
+
+        <section id="reg">
+        <hr>
+        <div>
+            <h4 class="main-title" id="main-title">Match with a mentor near you!</h4>
+        </div>
+
+        <form id="registration"> <!--action="testcon.php" method="post"-->
+          <fieldset id="searchTerms">
+
+            <div class="formRow">
+                <label for="nameBox">What is the mentor's last name?</label>
+                <input type="text" id="nameBox" name="nameSearch" maxlength="64" placeholder="Doe">
+                <select id="nameSearchType" name="nameSearchType">
+                   <option value="contains">Contains</option>
+                   <option value="beginsWith">Begins With</option>
+                   <option value="exact">Exact Match</option>
+                </select>
+            </div>
+
+            <div class="formRow">
+                <label for="subjectBox">What is the subject you are interested in?</label>
+                <input type="text" id="subjectBox" name="subjectSearch" maxlength="64" placeholder="Math">
+                <select id="subjectSearchType" name="subjectSearchType">
+                   <option value="contains">Contains</option>
+                   <option value="beginsWith">Begins With</option>
+                   <option value="exact">Exact Match</option>
+                </select>
+            </div>
+
+            <div class="formRow">
+                <label for="languageBox">What language do you prefer?</label>
+                <select id="languageBox" name="languageSearch">
+                   <option value=""></option>
+                   <option value="Spanish">Spanish</option>
+                   <option value="English">English</option>
+                </select>
+            </div>
+
+            <div class="formRow">
+                <label for="zipcodeBox">What is your zipcode?</label>
+                <input type="text" id="zipcodeBox" name="zipcodeSearch" maxlength="5" placeholder="78735">
+            </div>
+          </fieldset>
+
+          <div id="button">
+              <input type="button" value="search" alt="search" id="searchButton" >
+          </div>
+        </form>
+
+        <table id="MentorTable">
+           <caption>0 records found</caption>
+           <thead>
+              <tr>
+                 <th>Photo</th>
+                 <th>Name</th>
+                 <th>Language</th>
+                 <th>Subject</th>
+                 <th>Zip Code</th>
+                 <th>Meeting place</th>
+              </tr>
+           </thead>
+           <tbody>
+           </tbody>
+        </table>
+        </section>
+        <footer>
+      		Mentor Match &#8226; 1234 Main Drive, Austin TX 78758 &#8226; 123-456-7890
+      	</footer>
+    </body>
+
+</html>
